@@ -1,0 +1,29 @@
+.accordion{
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: none;
+
+  .accordion-item{
+
+    .accordion-button{
+      border-bottom: 2px solid #da2e00;
+      color: #fff;
+      font-family: $font-family-base!important;
+
+        &.accordion-button::after{
+          content: "";
+          background-image: url('../../src/seta.png');
+          background-repeat: no-repeat;
+
+        }  
+      }
+    }
+
+    .accordion-button:not(.collapsed){
+      background-color: #da2e00;
+      color: #fff;
+    }
+
+    .accordion-body{
+      color: #fff;
+    }
+  }

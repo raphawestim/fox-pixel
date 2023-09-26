@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-Light.woff2') format('woff2'),
+        url('Carbona-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-ExtraLight.woff2') format('woff2'),
+        url('Carbona-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Autography';
+    src: url('Autography.woff2') format('woff2'),
+        url('Autography.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-ExtraLight.woff2') format('woff2'),
+        url('Carbona-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-Medium.woff2') format('woff2'),
+        url('Carbona-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-SemiBold.woff2') format('woff2'),
+        url('Carbona-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-SemiBold.woff2') format('woff2'),
+        url('Carbona-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-Regular.woff2') format('woff2'),
+        url('Carbona-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-Light.woff2') format('woff2'),
+        url('Carbona-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-Regular.woff2') format('woff2'),
+        url('Carbona-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carbona';
+    src: url('Carbona-Medium.woff2') format('woff2'),
+        url('Carbona-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

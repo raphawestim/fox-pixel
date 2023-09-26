@@ -1,0 +1,248 @@
+html,body{
+  min-height: 100vh;
+  transition: font-size .3s ease;
+  background-color: $color-black !important;
+}
+
+.bloco-intro{
+  background-image: url('../src/background-intro.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $spacing-huge !important;
+}
+.Autography{
+  font-family: $font-family-display!important;
+  font-size: $font-size-lg !important;
+  color: $-color-brand-01;
+}
+
+.titulo{
+  font-family: $font-family-base!important;
+  font-size: $font-size-xxl !important;
+  color: $color-white;
+  font-weight: 600;
+}
+
+.descricao{
+  font-family: $font-family-base!important;
+  font-size: $font-size-sm !important;
+  color: $color-white;
+  font-weight: 300;
+}
+
+.btn-contato{
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fb3500;
+    padding: 10px;
+    border-radius: $border-radius-lg;
+    font-size: $font-size-sm !important;
+    padding: $spacing-xxxs;
+    margin-right: 20px;
+    font-family: $font-family-base, Arial, Helvetica, sans-serif;
+    margin-bottom: $spacing-xxxs;
+}
+
+.btn-contato:hover{
+  background-color: #fb3500;
+  color: #fff;
+  transition: .3s;
+}
+
+.grupo-botao{
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-md;
+}
+
+.bloco-midle{
+  background-image: url('../src/quemSomos.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $spacing-huge !important;
+}
+
+.bloco-midle2{
+  background-image: url('../src/bg-vantagens.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $spacing-huge !important;
+}
+
+.bloco-midle3{
+  background-image: url('../src/bg-acordeon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: $spacing-huge !important;
+}
+
+
+.titulo-2{
+  font-family: $font-family-base!important;
+  font-size: $font-size-xxl !important;
+  color: $-color-brand-03;
+  font-weight: 300;
+
+  &.color-white-text{
+    color: $color-white !important;
+  }
+
+  &.color-2-text{
+    color: $-color-brand-01 !important;
+  }
+}
+
+
+.bloco{
+  padding: 80px;
+}
+
+.img-solucao{
+  padding: 20px;
+  width: 250px;
+}
+
+.descricao-info{
+  font-family: $font-family-base!important;
+  font-size: $font-size-sm !important;
+  color: $color-white;
+  font-weight: 500;
+}
+
+.infografico{
+  width: 95%;
+  height: 100%;
+  padding: $spacing-xxxs !important;
+}
+
+.info-title{
+  font-family: $font-family-base!important;
+  font-size: $font-size-xxl !important;
+  color: $color-white;
+  font-weight: 300;
+}
+
+.info-x{
+  width: 90%;
+}
+
+.number{
+  font-family: $font-family-base!important;
+  font-size: $font-size-xxl !important;
+  color: $-color-brand-01;
+  font-weight: 600;
+}
+
+
+
+.depoimento{
+  padding: $spacing-xxs;
+
+  .img-estrelas{
+    width: 132px;
+    height: 20px;
+    margin-bottom: $spacing-nano;
+  }
+}
+
+footer{
+  background-image: url('../src/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.Autography-footer{
+  font-family: $font-family-display!important;
+  font-size: $font-size-md !important;
+  color: $-color-brand-01;
+
+  a{
+    color: $-color-brand-01;
+    text-decoration: none;
+  }
+}
+
+.descricao-footer{
+  font-family: $font-family-base!important;
+  font-size: $font-size-xs !important;
+  color: $color-white;
+  font-weight: 300;
+}
+
+.logo-footer{
+  width: 80%;
+  margin-right: $spacing-xs;
+}
+
+.autores{
+  display: flex;
+
+  .info{
+    padding: $spacing-xxxs;
+  }
+
+}
+
+.final{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.img-middle{
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .bloco-intro{
+    padding: $spacing-xxxs !important;
+  }
+
+  .bloco-midle{
+    padding: $spacing-xxxs !important;
+    background-image: none !important;
+  }
+
+  .bloco-midle2{
+    padding: $spacing-xxxs !important;
+    background-image: none !important;
+  }
+
+  .bloco{
+    padding: $spacing-xxxs !important;
+  }
+
+  .info-x{
+    padding: $spacing-xxxs
+  }
+  footer{
+    background-image: none !important;
+  }
+
+  .descricao-footer{
+    text-align: center;
+  }
+
+  .autores{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Autography-footer{
+    font-size: 2rem !important;
+  }
+
+  .final{
+    flex-direction: column;
+  }
+  
+  .logo-footer{
+    margin-bottom: $spacing-xs;
+  }
+  
+}
