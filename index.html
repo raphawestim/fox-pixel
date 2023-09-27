@@ -26,23 +26,21 @@
           <i class="fa-solid fa-bars"></i>
         </div>
         <ul id="nav-menu-site" class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Soluções</a></li>
-          <li><a href="#">Vantagens</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a data-translate="welcome" href="#home">Home</a></li>
+          <li><a data-translate="about" href="#quemSomos">Quem somos</a></li>
+          <li><a data-translate="solutions" href="#solucoes">Soluções</a></li>
+          <li><a data-translate="benefits" href="#vantagens">Vantagens</a></li>
+          <li><a data-translate="portfolio" href="#Portfolio">Portfólio</a></li>
+          <li><a data-translate="FAQ" href="#faq">FAQ</a></li>
         </ul>
         <div>
-          <button class="btn-language brazil">
-          </button>
-          <button class="btn-language eua">
-          </button>
+          <button class="btn-language brazil" data-lang="pt"></button>
+          <button id="change-language" class="btn-language eua" data-lang="en"></button>
         </div>
       </nav>
     </header>
 
-    <section class="bloco-intro">
+    <section id="home" class="bloco-intro">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -58,11 +56,11 @@
       </div>
     </section>
 
-    <section class="bloco bloco-midle">
+    <section id="quemSomos" class="bloco bloco-midle">
       <div class="container">
         <div class="row justify-content-end">
           <div class="col-md-6">
-            <h2 class="titulo-2">Quem somos?</h2>
+            <h2 data-translate="about" class="titulo-2">Quem somos?</h2>
             <p class="descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod a veniam ratione similique cumque blanditiis, molestias aperiam, dicta rem debitis assumenda quidem atque eligendi eos nihil repellendus dignissimos, natus aut.</p>
             <h2 class="titulo-2">Missao, Visao & valores</h2>
             <p class="descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod a veniam ratione similique cumque blanditiis, molestias aperiam, dicta rem debitis assumenda quidem atque eligendi eos nihil repellendus dignissimos, natus aut.</p>
@@ -71,7 +69,7 @@
       </div>
     </section>
 
-    <section class="bloco">
+    <section id="solucoes" class="bloco">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-10">
@@ -142,7 +140,7 @@
       </div>
     </section>
 
-    <section class="bloco">
+    <section id="Portfolio" class="bloco">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col">
@@ -252,7 +250,7 @@
       </div>
     </section>
 
-    <section class="bloco bloco-midle2">
+    <section id="vantagens" class="bloco bloco-midle2">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-4">
@@ -266,7 +264,7 @@
       </div>
     </section>
 
-    <section class="bloco bloco-midle3">
+    <section id="faq" class="bloco bloco-midle3">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -388,5 +386,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/caroucel.js"></script>
+  <script src="js/language.js"></script>
 </body>
 </html>

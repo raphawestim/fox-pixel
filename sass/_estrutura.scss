@@ -136,7 +136,7 @@ html,body{
 
 
 .depoimento{
-  padding: $spacing-xxs;
+  padding: $spacing-xl;
 
   .img-estrelas{
     width: 132px;
@@ -188,6 +188,14 @@ footer{
   display: flex;
     justify-content: center;
     align-items: center;
+
+    &::after{
+      content: '';
+      width: 1px;
+      height: 40px;
+      background-color: $-color-brand-01;
+      margin: $spacing-xxxs;
+    }
 }
 
 
@@ -239,6 +247,14 @@ footer{
 
   .final{
     flex-direction: column;
+
+    &::after{
+      content: '';
+      width: 40px;
+      height: 1px;
+      background-color: $-color-brand-01;
+      margin: $spacing-xxxs;
+    }
   }
   
   .logo-footer{
