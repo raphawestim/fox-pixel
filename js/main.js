@@ -28,6 +28,20 @@ whatsappButton.addEventListener('click', () => {
     window.open(linkWhatsApp, '_blank');
 });
 
+// const email = document.getElementById('botaoEmail');
+// console.log(email);
+
+// email.addEventListener('click', () => {
+
+//   const email  = 'contato@foxpixel.com.br';
+//   const assunto = 'Solicitar Orçamento';
+//   const corpo = 'Olá, gostaria de fazer um orçamento';
+
+//   const linkEmail = `mailto:${email}?subject=${assunto}&body=${corpo}`;
+
+//   window.location.href = linkEmail;
+// });
+
 
 
 // Função para verificar se uma seção está visível na janela de visualização
