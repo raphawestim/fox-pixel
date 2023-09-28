@@ -493,7 +493,7 @@ footer {
 }
 
 .logo-footer {
-  width: 80%;
+  width: 10rem;
   margin-right: 32px;
 }
 
@@ -523,6 +523,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .titulo-2 {
+    font-size: 2.5rem !important;
+  }
   .bloco-intro {
     padding: 15px !important;
   }
@@ -538,7 +541,7 @@ footer {
     padding: 15px !important;
   }
   .info-x {
-    padding: 15px;
+    display: none;
   }
   footer {
     background-image: none !important;
@@ -568,8 +571,7 @@ footer {
   }
 }
 .img-logo {
-  width: 451px;
-  height: 93px;
+  width: 10rem;
   margin: 15px !important;
 }
 
@@ -578,13 +580,19 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 24px !important;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
 .interactors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo-botao-lingua {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -607,14 +615,12 @@ footer {
 }
 .menu li a:hover {
   /* Estilo para botões do menu no estado "hover" */
-  margin-bottom: 2px solid red;
-  color: #fff;
+  color: #e9a42b;
+  border-bottom: 2px solid #e9a42b;
   /* Adicione outros estilos de hover aqui */
 }
 .menu li.active-menu a {
-  margin-bottom: 2px solid red;
   color: #e9a42b;
-  font-weight: 600;
   border-bottom: 2px solid #e9a42b;
   /* Adicione outros estilos para botões ativos aqui */
 }
@@ -643,6 +649,7 @@ footer {
   }
   .topo {
     flex-direction: column;
+    position: relative;
   }
   .menu {
     display: none;

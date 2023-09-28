@@ -1,6 +1,5 @@
 .img-logo{
-  width: 451px;
-  height: 93px;
+  width: 10rem;
   margin: $spacing-xxxs !important;
 }
 
@@ -9,13 +8,19 @@
   align-items: center;
   justify-content: space-between;
   padding: $spacing-xxs !important;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
 .interactors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo-botao-lingua{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +43,8 @@
 
       &:hover {
         /* Estilo para botões do menu no estado "hover" */
-        margin-bottom: 2px solid red;
-        color: $color-white;
+        color: $-color-brand-01;
+        border-bottom: 2px solid $-color-brand-01;
         /* Adicione outros estilos de hover aqui */
       }
     }
@@ -47,9 +52,7 @@
     // Estilo para botões do menu quando estão ativos (seções visíveis)
     &.active-menu {
       a {
-        margin-bottom: 2px solid red;
         color: $-color-brand-01;
-        font-weight: 600;
         border-bottom: 2px solid $-color-brand-01;
         /* Adicione outros estilos para botões ativos aqui */
       }
@@ -86,6 +89,7 @@
 
   .topo{
     flex-direction: column;
+    position: relative;
   }
 
   .menu{
@@ -112,4 +116,8 @@
   }
 
   
+}
+
+@media screen and (min-width: 1024px) {
+
 }
