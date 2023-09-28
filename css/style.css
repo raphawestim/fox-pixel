@@ -470,7 +470,7 @@ html, body {
 
 footer {
   background-image: url("../src/footer.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -544,7 +544,7 @@ footer {
     display: none;
   }
   footer {
-    background-image: none !important;
+    background-size: contain;
   }
   .descricao-footer {
     text-align: center;
@@ -610,7 +610,7 @@ footer {
 .menu li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Carbona", sans-serif, Arial, Helvetica, sans-serif;
 }
 .menu li a:hover {
@@ -629,6 +629,7 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 100%;
+  margin: 4px;
 }
 .btn-language.brazil {
   background-image: url("../../src/language.png");
@@ -643,10 +644,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .img-logo {
-    width: 300px;
-    height: 62px;
-  }
   .topo {
     flex-direction: column;
     position: relative;
