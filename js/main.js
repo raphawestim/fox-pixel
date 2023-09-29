@@ -3,7 +3,7 @@ function scrollVisibleWeb(){
   console.log(sections);
 
   if(sections.length){
-      const windowMetade = window.innerHeight * 0.6;
+      const windowMetade = window.innerHeight * 0.7;
       console.log(sections);
 
       function animaScroll(){
@@ -119,6 +119,6 @@ function addHoverActiveClass() {
   
   // Chame a função para adicionar a classe "hover-active"
   addHoverActiveClass();
-  
+
 // Função para verificar se uma seção está visível na janela de visualização
   scrollVisibleWeb();
