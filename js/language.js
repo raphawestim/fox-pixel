@@ -1,3 +1,5 @@
+
+
 const translations = {
   pt: {
     welcome: 'Home',
@@ -9,7 +11,7 @@ const translations = {
     ourSolutions: 'Nossas Soluções',
     MissionVisionValues: 'Missao, Visao & valores',
     requestQuote: 'Solicitar orçamento',
-    talkViaWhatsapp: 'falar por whatsapp',
+    talkViaWhatsapp: `falar por whatsapp`,
     journeyOfCreation: 'Jornada de Criação',
     OurClients: 'Nossos Clientes',
     Depositions: 'Depoimentos',
@@ -24,6 +26,7 @@ const translations = {
     question4: 'Quais materiais preciso fornecer pra Fox Pixel criar uma imagem 3D?',
     question5: 'Vocês trabalham com pequenas empresas também?',
     question6: 'Por que a Fox Pixel é a melhor empresa de renderização?',
+    by: 'por Rodrigo Premazzi',
     // Adicione mais traduções aqui conforme necessário
   },
   en: {
@@ -51,14 +54,19 @@ const translations = {
     question4: 'What materials do I need to provide for Fox Pixel to create a 3D image?',
     question5: 'Do you work with small businesses too?',
     question6: 'Why is Fox Pixel the best rendering company?',
+    by: 'by Rodrigo Premazzi',
     // Adicione mais traduções aqui conforme necessário
   },
   
 };
 
-// Função para atualizar o conteúdo do site com base no idioma selecionado
+const iconWhatsapp = document.querySelector('.icon-whatsapp');
+  console.log(iconWhatsapp);
+
+//Função para atualizar o conteúdo do site com base no idioma selecionado
 function updateContent(language) {
   const elements = document.querySelectorAll('[data-translate]');
+  
   elements.forEach(element => {
     const key = element.getAttribute('data-translate');
     element.textContent = translations[language][key];
