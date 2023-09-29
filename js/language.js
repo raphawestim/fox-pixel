@@ -61,7 +61,6 @@ const translations = {
 };
 
 const iconWhatsapp = document.querySelector('.icon-whatsapp');
-  console.log(iconWhatsapp);
 
 //Função para atualizar o conteúdo do site com base no idioma selecionado
 function updateContent(language) {

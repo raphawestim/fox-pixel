@@ -333,6 +333,18 @@ html, body {
   background-color: #000 !important;
 }
 
+.js .item-conteudo {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.item-conteudo.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s;
+}
+
 .bloco-intro {
   background-image: url("../src/background-intro.png");
   background-size: cover;

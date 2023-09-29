@@ -1,5 +1,32 @@
+function scrollVisibleWeb(){
+  const sections = document.querySelectorAll(".item-conteudo");
+  console.log(sections);
+
+  if(sections.length){
+      const windowMetade = window.innerHeight * 0.6;
+      console.log(sections);
+
+      function animaScroll(){
+          sections.forEach((section) => {
+              const sectionTop = section.getBoundingClientRect().top;
+              const isSectionVisible = sectionTop - windowMetade < 0;
+              //console.log(sectionTop)
+              
+              if(isSectionVisible){
+                  section.classList.add('ativo');
+              }else{
+                  section.classList.remove('ativo');
+              }
+          });
+      }
+
+      animaScroll();
+
+      window.addEventListener('scroll', animaScroll)
+  }
+};
+
 const menuMobile = document.querySelector('#menu-mobile');
-console.log(menuMobile);
 
 menuMobile.addEventListener('click', () => {
     const menu = document.querySelector('#nav-menu-site');
@@ -92,3 +119,6 @@ function addHoverActiveClass() {
   
   // Chame a função para adicionar a classe "hover-active"
   addHoverActiveClass();
+  
+// Função para verificar se uma seção está visível na janela de visualização
+  scrollVisibleWeb();
