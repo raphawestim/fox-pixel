@@ -1,5 +1,5 @@
 .img-logo{
-  width: 10rem;
+  width: 15rem;
   margin: $spacing-xxxs !important;
 }
 
@@ -17,7 +17,7 @@
 .interactors{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .grupo-botao-lingua{
@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 50px;
+  //margin-right: 50px;
 
   li {
     padding: $spacing-xxxs !important;
@@ -111,6 +111,10 @@
     margin: $spacing-xs;
     font-size: $font-size-md;
 
+  }
+
+  ul{
+    padding: 0 !important;
   }
 
   

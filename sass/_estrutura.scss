@@ -185,7 +185,7 @@ footer{
 }
 
 .logo-footer{
-  width: 10rem;
+  width: 15rem;
   margin-right: $spacing-xs;
 }
 
@@ -218,6 +218,11 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+
+  .grupo-botao{
+    flex-direction: column;
+    display: flex;
+  }
 
   .btn-contato{
    

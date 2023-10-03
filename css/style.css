@@ -506,7 +506,7 @@ footer {
 }
 
 .logo-footer {
-  width: 10rem;
+  width: 15rem;
   margin-right: 32px;
 }
 
@@ -536,6 +536,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .grupo-botao {
+    flex-direction: column;
+    display: flex;
+  }
   .titulo-2 {
     font-size: 2.5rem !important;
   }
@@ -584,7 +588,7 @@ footer {
   }
 }
 .img-logo {
-  width: 10rem;
+  width: 15rem;
   margin: 15px !important;
 }
 
@@ -602,7 +606,7 @@ footer {
 .interactors {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .grupo-botao-lingua {
@@ -615,7 +619,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 50px;
 }
 .menu li {
   padding: 15px !important;
@@ -678,6 +681,9 @@ footer {
     color: #fff;
     margin: 32px;
     font-size: 1.5rem;
+  }
+  ul {
+    padding: 0 !important;
   }
 }
 .swiper {

@@ -96,12 +96,6 @@ function isSectionVisible(sectionId) {
       }
     });
   }
-  
-  // Adicione um ouvinte de evento de rolagem para atualizar o menu ativo
-  window.addEventListener('scroll', updateActiveMenuItem);
-  
-  // Chame a função inicialmente para definir o menu ativo na carga da página
-  updateActiveMenuItem();
 
   // Função para adicionar a classe "hover-active" quando o item de menu estiver em estado "hover"
 function addHoverActiveClass() {
@@ -117,8 +111,12 @@ function addHoverActiveClass() {
     });
   }
   
-  // Chame a função para adicionar a classe "hover-active"
-  addHoverActiveClass();
+  
+  // Adicione um ouvinte de evento de rolagem para atualizar o menu ativo
+  window.addEventListener('scroll', () => {
+    updateActiveMenuItem();
+    addHoverActiveClass(); // Chame a função para adicionar a classe "hover-active"
+  });
 
 // Função para verificar se uma seção está visível na janela de visualização
   scrollVisibleWeb();

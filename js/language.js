@@ -1,5 +1,3 @@
-
-
 const translations = {
   pt: {
     welcome: 'Home',
