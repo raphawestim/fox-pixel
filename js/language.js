@@ -8,7 +8,7 @@ const translations = {
     FAQ: 'FAQ',
     ourSolutions: 'Nossas Soluções',
     MissionVisionValues: 'Missao, Visao & valores',
-    requestQuote: 'Solicitar orçamento',
+    requestQuote: 'Solicitar orçamento por email',
     talkViaWhatsapp: `falar por whatsapp`,
     journeyOfCreation: 'Jornada de Criação',
     OurClients: 'Nossos Clientes',

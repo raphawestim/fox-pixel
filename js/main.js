@@ -55,6 +55,19 @@ whatsappButton.addEventListener('click', () => {
     window.open(linkWhatsApp, '_blank');
 });
 
+const whatsappButton2 = document.getElementById('whatsappButton');
+
+whatsappButton2.addEventListener('click', () => {
+    // Substitua 'SEU_NUMERO' pelo número de telefone internacional desejado
+    const numeroTelefone = '+5511997956653';
+
+    // Cria o link do WhatsApp com o número de telefone
+    const linkWhatsApp2 = `https://wa.me//${numeroTelefone}?text=Olá%20gostaria%20de%20fazer%20um%20orçamento`;
+
+    // Redireciona para o WhatsApp
+    window.open(linkWhatsApp2, '_blank');
+});
+
 // const email = document.getElementById('botaoEmail');
 // console.log(email);
 
