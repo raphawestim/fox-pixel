@@ -492,6 +492,7 @@ footer {
   font-family: "Autography", Arial, Helvetica, sans-serif !important;
   font-size: 1.5rem !important;
   color: #e9a42b;
+  cursor: pointer;
 }
 .Autography-footer a {
   color: #e9a42b;
