@@ -4,9 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="src/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://kit.fontawesome.com/46715be261.js" crossorigin="anonymous"></script>
   <!-- Slick Slider CSS -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -54,7 +57,10 @@
             <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur distinctio, maiores aspernatur iure veritatis aliquam, pariatur et, soluta quae architecto inventore cumque quaerat? Labore modi voluptatum fuga neque ab!</p>  
             <div class="grupo-botao">
               <a id="botaoEmail" data-translate="requestQuote" href="mailto:contato@foxpixel.com.br" class="btn-contato">Solicitar orçamento por email</a>
-              <button id="whatsappButton" class="btn-contato"><i class="fa-brands fa-whatsapp margin-right-spacing-nano"></i>whatsapp</button>
+              <button id="whatsappButton" data-translate="talkViaWhatsapp" class="btn-contato">
+                <i class="fa-brands fa-whatsapp margin-right-spacing-nano" id="icon-whats"></i>
+                <span class="button-text">whatsapp</span>
+              </button>          
             </div>           
           </div>
         </div>
@@ -378,7 +384,7 @@
               </div>
               <div class="info dev">
                 <p data-translate="Developed" class="descricao-footer">Desenvolvido por</p>
-                <p class="Autography-footer font-family-highlight"><a href="https://wa.me//+5511997956653?text=Olá%20gostaria%20de%20fazer%20um%20orçamento" target="_blank" >Raphael Westim</a></p>
+                <p id="devContato" class="Autography-footer font-family-highlight">Raphael Westim</p>
               </div>
             </div>
           </div>

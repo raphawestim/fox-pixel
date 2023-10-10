@@ -55,9 +55,9 @@ whatsappButton.addEventListener('click', () => {
     window.open(linkWhatsApp, '_blank');
 });
 
-const whatsappButton2 = document.getElementById('whatsappButton');
+const devContato = document.getElementById('devContato');
 
-whatsappButton2.addEventListener('click', () => {
+devContato.addEventListener('click', () => {
     // Substitua 'SEU_NUMERO' pelo número de telefone internacional desejado
     const numeroTelefone = '+5511997956653';
 

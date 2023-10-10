@@ -1,3 +1,6 @@
+// const whats = document.getElementById('icon-whats');
+// console.log(whats);
+
 const translations = {
   pt: {
     welcome: 'Home',
@@ -9,7 +12,7 @@ const translations = {
     ourSolutions: 'Nossas Soluções',
     MissionVisionValues: 'Missao, Visao & valores',
     requestQuote: 'Solicitar orçamento por email',
-    talkViaWhatsapp: `falar por whatsapp`,
+    talkViaWhatsapp: '<i class="fa-brands fa-whatsapp margin-right-spacing-nano"></i>Contato por Whatsapp',
     journeyOfCreation: 'Jornada de Criação',
     OurClients: 'Nossos Clientes',
     Depositions: 'Depoimentos',
@@ -37,7 +40,7 @@ const translations = {
     ourSolutions: 'Our Solutions',
     MissionVisionValues: 'Mission, Vision & Values',
     requestQuote: 'request quote',
-    talkViaWhatsapp: 'Talk via Whatsapp',
+    talkViaWhatsapp: '<i class="fa-brands fa-whatsapp margin-right-spacing-nano"></i>Contact via Whatsapp',
     journeyOfCreation: 'journey of creation',
     OurClients: 'Our clients',
     Depositions: 'Depositions',
@@ -58,15 +61,16 @@ const translations = {
   
 };
 
-const iconWhatsapp = document.querySelector('.icon-whatsapp');
-
-//Função para atualizar o conteúdo do site com base no idioma selecionado
+// Função para atualizar o conteúdo do site com base no idioma selecionado
 function updateContent(language) {
   const elements = document.querySelectorAll('[data-translate]');
   
   elements.forEach(element => {
     const key = element.getAttribute('data-translate');
-    element.textContent = translations[language][key];
+    const translation = translations[language][key];
+    
+    // Defina o conteúdo HTML do elemento, permitindo que o ícone seja renderizado
+    element.innerHTML = translation;
   });
 }
 

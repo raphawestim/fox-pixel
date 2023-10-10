@@ -572,6 +572,7 @@ footer {
   }
   .Autography-footer {
     font-size: 2rem !important;
+    cursor: pointer;
   }
   .final {
     flex-direction: column;
