@@ -39,7 +39,7 @@ const translations = {
     FAQ: 'FAQ',
     ourSolutions: 'Our Solutions',
     MissionVisionValues: 'Mission, Vision & Values',
-    requestQuote: 'request quote',
+    requestQuote: 'request e-mail quote',
     talkViaWhatsapp: '<i class="fa-brands fa-whatsapp margin-right-spacing-nano"></i>Contact via Whatsapp',
     journeyOfCreation: 'journey of creation',
     OurClients: 'Our clients',
