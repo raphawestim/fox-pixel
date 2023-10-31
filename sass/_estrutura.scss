@@ -219,17 +219,27 @@ footer{
   object-fit: cover;
 }
 
+.fa-instagram{
+  color: $-color-brand-01;
+  font-size: 2rem;
+  margin-right: $spacing-xxxs;
+}
+
+.fa-facebook{
+  color: $-color-brand-01;
+  font-size: 2rem;
+  margin-right: $spacing-xxxs;
+}
+
 @media screen and (max-width: 768px) {
+
+  
 
   .grupo-botao{
     flex-direction: column;
     display: flex;
   }
 
-  .btn-contato{
-   
-
-  }
   .titulo-2{
     font-size: $font-size-xl !important;
   }
@@ -287,6 +297,10 @@ footer{
   
   .logo-footer{
     margin-bottom: $spacing-xs;
+  }
+
+  .social{
+    text-align: center;
   }
   
 }

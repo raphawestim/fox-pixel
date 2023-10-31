@@ -536,7 +536,22 @@ footer {
   object-fit: cover;
 }
 
+.fa-instagram {
+  color: #e9a42b;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.fa-facebook {
+  color: #e9a42b;
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 768px) {
+  .social {
+    text-align: center;
+  }
   .grupo-botao {
     flex-direction: column;
     display: flex;
