@@ -449,9 +449,9 @@ html, body {
 }
 
 .infografico {
-  width: 95%;
-  height: 100%;
-  padding: 15px !important;
+  max-width: 100%;
+  height: auto;
+  padding-top: 4.2rem;
 }
 
 .info-title {
@@ -549,8 +549,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .social {
-    text-align: center;
+  .titulo {
+    font-size: 2.5rem !important;
   }
   .grupo-botao {
     flex-direction: column;
@@ -602,6 +602,18 @@ footer {
   }
   .logo-footer {
     margin-bottom: 32px;
+  }
+  .social {
+    text-align: center;
+  }
+  .info-title {
+    font-size: 2rem !important;
+  }
+  .number {
+    font-size: 2rem !important;
+  }
+  .imgX {
+    display: none;
   }
 }
 .img-logo {

@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-md-7 margin-top-spacing-xl">
             <p data-translate="by" class="Autography font-family-highlight">por Rodrigo Premazzi</p>
-            <h1 class="titulo">Lorem ipsum dolor sit, amet consectetur.</h1>
+            <h1 data-translate="tituloSite" class="titulo">Lorem ipsum dolor sit, amet consectetur.</h1>
             <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur distinctio, maiores aspernatur iure veritatis aliquam, pariatur et, soluta quae architecto inventore cumque quaerat? Labore modi voluptatum fuga neque ab!</p>  
             <div class="grupo-botao">
               <a id="botaoEmail" data-translate="requestQuote" href="mailto:contato@foxpixel.com.br" class="btn-contato">Solicitar orçamento por email</a>
@@ -89,25 +89,26 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-3 text-center">
-            <img class="img-solucao" src="src/solucao01.png" alt="">
+            <!-- <img class="img-solucao" src="src/solucao01.png" alt=""> -->
+            <img class="img-solucao" id="imagemId" data-translate-en="src/solucao01.png" data-translate-pt="src/solucao01.png" src="src/solucao01.png" alt="">
             <p class="descricao-info">Imagens 3D</p>
           </div>
           <div class="col-md-3 text-center">
-            <img class="img-solucao" src="src/solucao02.png" alt="">
+            <img class="img-solucao" id="imagemId" data-translate-en="src/solucao02.png" data-translate-pt="src/solucao02.png" src="src/solucao02.png" alt="">
             <p class="descricao-info">Tours Virtuais</p>
           </div>
           <div class="col-md-3 text-center">
-            <img class="img-solucao" src="src/solucao03.png" alt="">
+            <img class="img-solucao" id="imagemId" data-translate-en="src/solucao03.png" data-translate-pt="src/solucao03.png" src="src/solucao03.png" alt="">
             <p class="descricao-info">Animações 3D</p>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-3 text-center">
-            <img class="img-solucao" src="src/solucao04.png" alt="">
+            <img class="img-solucao" id="imagemId" data-translate-en="src/solucao04.png" data-translate-pt="src/solucao04.png" src="src/solucao04.png" alt="">
             <p class="descricao-info">Humanizações</p>
           </div>
           <div class="col-md-3 text-center">
-            <img class="img-solucao" src="src/solucao05.png" alt="">
+            <img class="img-solucao" id="imagemId" data-translate-en="src/solucao05.png" data-translate-pt="src/solucao05.png" src="src/solucao05.png" alt="">
             <p class="descricao-info">Design Gráfico</p>
           </div>
         </div>
@@ -138,11 +139,13 @@
             <h3 class="info-title"><span class="number">02.</span>Structure</h3>
             <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a veniam ratione similique cumque blanditiis, molestias aperiam, dicta rem debitis assumenda quidem atque eligendi eos nihil repellendus dignissimos, natus aut.</p>
           </div>
-          <div class="col">
+          <div class="col imgX">
             <img class="info-x" src="src/infografico02.png" alt="">
           </div>
           <div class="col">
-            <h3 class="info-title"><span class="number">03.</span>Concept</h3>
+            <h3 data-translate="concept" class="info-title">
+              <span class="number">03.</span>Concept
+            </h3>
             <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a veniam ratione similique cumque blanditiis, molestias aperiam, dicta rem debitis assumenda quidem atque eligendi eos nihil repellendus dignissimos, natus aut.</p>
             <h3 class="info-title"><span class="number">04.</span>Ultra-realism</h3>
             <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a veniam ratione similique cumque blanditiis, molestias aperiam, dicta rem debitis assumenda quidem atque eligendi eos nihil repellendus dignissimos, natus aut.</p>
@@ -285,18 +288,20 @@
         <div class="row">
           <div class="col">
             <div class="accordion" id="accordionExample">
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button data-translate="question1" class="accordion-button collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    1. O que faz uma empresa de renderização?
+                  <button data-translate="question1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    1. teste maroto
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                   <button data-translate="question2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -356,8 +361,7 @@
                     <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                   </div>
                 </div>
-              </div>
-              
+              </div> 
             </div>
           </div>
         </div>
@@ -400,9 +404,9 @@
 
   </main>
   <script src="js/main.js"></script>
+  <script src="js/language.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/caroucel.js"></script>
-  <script src="js/language.js"></script>
 </body>
 </html>

@@ -21,13 +21,17 @@ const translations = {
     footer: 'Termos de Uso | Política de Privacidade 32.661.984/0001-48 – FOX PIXEL',
     design: 'Design por',
     Developed : 'Desenvolvido por',
-    question1: 'O que faz uma empresa de renderização?',
+    question1: 'oi tudo bem? como vai voce?',
     question2: 'Quanto custa o serviço da Fox Pixel?',
     question3: 'Quanto tempo leva pra produzir imagens ou vídeos 3D?',
     question4: 'Quais materiais preciso fornecer pra Fox Pixel criar uma imagem 3D?',
     question5: 'Vocês trabalham com pequenas empresas também?',
     question6: 'Por que a Fox Pixel é a melhor empresa de renderização?',
     by: 'por Rodrigo Premazzi',
+    teste01: 'teste01',
+    tituloSite: 'Fox Pixel - Renderização 3D',
+    concept: 'Conceito por',
+    number: '03.',
     // Adicione mais traduções aqui conforme necessário
   },
   en: {
@@ -56,6 +60,9 @@ const translations = {
     question5: 'Do you work with small businesses too?',
     question6: 'Why is Fox Pixel the best rendering company?',
     by: 'by Rodrigo Premazzi',
+    tituloSite: 'Fox Pixel - 3D Rendering',
+    concept: 'Concept by',
+    number: '03.',
     // Adicione mais traduções aqui conforme necessário
   },
   
@@ -64,15 +71,32 @@ const translations = {
 // Função para atualizar o conteúdo do site com base no idioma selecionado
 function updateContent(language) {
   const elements = document.querySelectorAll('[data-translate]');
-  
+
   elements.forEach(element => {
     const key = element.getAttribute('data-translate');
     const translation = translations[language][key];
-    
-    // Defina o conteúdo HTML do elemento, permitindo que o ícone seja renderizado
-    element.innerHTML = translation;
+
+    const numberSpan = element.querySelector('.number'); // Obtém o span com a classe "number"
+    if (numberSpan) {
+      numberSpan.innerHTML = translations[language]['number']; // Atualiza o número (caso esteja traduzível)
+    }
+
+    const text = (numberSpan ? numberSpan.outerHTML : '') + ' ' + translation; // Texto com número e tradução
+    element.innerHTML = text; // Atualiza o conteúdo do elemento
   });
 }
+
+// Função para atualizar a imagem com base no idioma selecionado
+function changeImageLanguage(language) {
+  const imageElement = document.getElementById('imagemId');
+  const newImageSrc = imageElement.getAttribute(`data-translate-${language}`);
+
+  if (newImageSrc) {
+    imageElement.src = newImageSrc;
+  }
+}
+
+
 
 // Event listener para os botões de idioma
 const languageButtons = document.querySelectorAll('.btn-language');
@@ -81,6 +105,7 @@ languageButtons.forEach(button => {
     // Obtenha o idioma do botão clicado
     const language = button.classList.contains('brazil') ? 'pt' : 'en';
     // Atualize o conteúdo do site
+    changeImageLanguage(language);
     updateContent(language);
   });
 });
